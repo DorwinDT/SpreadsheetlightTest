@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{904D3492-9FA4-4C8E-88F3-8A005BE825B8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SpeedLightTestCorrect</RootNamespace>
+    <AssemblyName>SpeedLightTestCorrect</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpreadSheetLight\CalculationFunctions.cs" />
+    <Compile Include="SpreadSheetLight\CellFunctions.cs" />
+    <Compile Include="SpreadSheetLight\Charts\EGAxShared.cs" />
+    <Compile Include="SpreadSheetLight\Charts\EGDLblShared.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLAreaChartOptions.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLAxisDataSourceType.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLBackWall.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLBarChartOptions.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLBubbleChartOptions.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLChart.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLChartAlignment.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLChartOptions.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLChartTool.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLCreateChartOptions.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLDataLabelOptions.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLDataPointOptions.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLDataSeries.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLDataSeriesOptions.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLDataTable.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLDownBars.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLDropLines.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLFloor.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLGroupDataLabelOptions.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLHighLowLines.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLLayout.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLLegend.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLLineChartOptions.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLMajorGridlines.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLMarker.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLMinorGridlines.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLMultiLevelStringReference.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLNumberDataSourceType.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLNumberDataType.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLNumberReference.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLNumericPoint.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLPieChartOptions.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLPlotArea.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLSeriesAxis.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLSideWall.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLStockChartOptions.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLStringLiteral.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLStringPoint.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLStringReference.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLTextAxis.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLTitle.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLTrendline.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLTrendlineLabel.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLUpBars.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLUpDownBars.cs" />
+    <Compile Include="SpreadSheetLight\Charts\SLValueAxis.cs" />
+    <Compile Include="SpreadSheetLight\CommentFunctions.cs" />
+    <Compile Include="SpreadSheetLight\conditionalformatting\SLColorScale.cs" />
+    <Compile Include="SpreadSheetLight\conditionalformatting\SLConditionalFormatting.cs" />
+    <Compile Include="SpreadSheetLight\conditionalformatting\SLConditionalFormattingRule.cs" />
+    <Compile Include="SpreadSheetLight\conditionalformatting\SLConditionalFormatValueObject.cs" />
+    <Compile Include="SpreadSheetLight\conditionalformatting\SLDataBar.cs" />
+    <Compile Include="SpreadSheetLight\conditionalformatting\SLDataBarOptions.cs" />
+    <Compile Include="SpreadSheetLight\conditionalformatting\SLFiveIconSetOptions.cs" />
+    <Compile Include="SpreadSheetLight\conditionalformatting\SLFourIconSetOptions.cs" />
+    <Compile Include="SpreadSheetLight\conditionalformatting\SLIconSet.cs" />
+    <Compile Include="SpreadSheetLight\conditionalformatting\SLThreeIconSetOptions.cs" />
+    <Compile Include="SpreadSheetLight\CreateObjectFunctions.cs" />
+    <Compile Include="SpreadSheetLight\Drawing\DrawingEnums.cs" />
+    <Compile Include="SpreadSheetLight\Drawing\SLColorTransform.cs" />
+    <Compile Include="SpreadSheetLight\Drawing\SLDrawingTool.cs" />
+    <Compile Include="SpreadSheetLight\Drawing\SLEffectList.cs" />
+    <Compile Include="SpreadSheetLight\Drawing\SLExtents.cs" />
+    <Compile Include="SpreadSheetLight\Drawing\SLFill.cs" />
+    <Compile Include="SpreadSheetLight\Drawing\SLFormat3D.cs" />
+    <Compile Include="SpreadSheetLight\Drawing\SLGlow.cs" />
+    <Compile Include="SpreadSheetLight\Drawing\SLGradientFill.cs" />
+    <Compile Include="SpreadSheetLight\Drawing\SLGradientStop.cs" />
+    <Compile Include="SpreadSheetLight\Drawing\SLLinePropertiesType.cs" />
+    <Compile Include="SpreadSheetLight\Drawing\SLOffset.cs" />
+    <Compile Include="SpreadSheetLight\Drawing\SLPicture.cs" />
+    <Compile Include="SpreadSheetLight\Drawing\SLReflection.cs" />
+    <Compile Include="SpreadSheetLight\Drawing\SLRotation3D.cs" />
+    <Compile Include="SpreadSheetLight\Drawing\SLShadowEffect.cs" />
+    <Compile Include="SpreadSheetLight\Drawing\SLShapeProperties.cs" />
+    <Compile Include="SpreadSheetLight\Drawing\SLSoftEdge.cs" />
+    <Compile Include="SpreadSheetLight\Drawing\SLTransform2D.cs" />
+    <Compile Include="SpreadSheetLight\ImportFunctions.cs" />
+    <Compile Include="SpreadSheetLight\InternalDataStoreFunctions.cs" />
+    <Compile Include="SpreadSheetLight\MiscFunctions.cs" />
+    <Compile Include="SpreadSheetLight\misc\MiscEnums.cs" />
+    <Compile Include="SpreadSheetLight\misc\SLAutoFilter.cs" />
+    <Compile Include="SpreadSheetLight\misc\SLConstants.cs" />
+    <Compile Include="SpreadSheetLight\misc\SLConvert.cs" />
+    <Compile Include="SpreadSheetLight\misc\SLDocumentProperties.cs" />
+    <Compile Include="SpreadSheetLight\misc\SLRstType.cs" />
+    <Compile Include="SpreadSheetLight\misc\SLRun.cs" />
+    <Compile Include="SpreadSheetLight\misc\SLSimpleTheme.cs" />
+    <Compile Include="SpreadSheetLight\misc\SLSortCondition.cs" />
+    <Compile Include="SpreadSheetLight\misc\SLSortItem.cs" />
+    <Compile Include="SpreadSheetLight\misc\SLSortState.cs" />
+    <Compile Include="SpreadSheetLight\misc\SLTextImportOptions.cs" />
+    <Compile Include="SpreadSheetLight\misc\SLThemeSettings.cs" />
+    <Compile Include="SpreadSheetLight\misc\SLTool.cs" />
+    <Compile Include="SpreadSheetLight\misc\SLToolDefaultRowHeadingWidth.cs" />
+    <Compile Include="SpreadSheetLight\misc\SLToolDefaultRowHeight.cs" />
+    <Compile Include="SpreadSheetLight\misc\SLWorksheetStatistics.cs" />
+    <Compile Include="SpreadSheetLight\office2010\SLColorScale2010.cs" />
+    <Compile Include="SpreadSheetLight\office2010\SLConditionalFormatting2010.cs" />
+    <Compile Include="SpreadSheetLight\office2010\SLConditionalFormattingIcon2010.cs" />
+    <Compile Include="SpreadSheetLight\office2010\SLConditionalFormattingRule2010.cs" />
+    <Compile Include="SpreadSheetLight\office2010\SLConditionalFormattingValueObject2010.cs" />
+    <Compile Include="SpreadSheetLight\office2010\SLDataBar2010.cs" />
+    <Compile Include="SpreadSheetLight\office2010\SLIconSet2010.cs" />
+    <Compile Include="SpreadSheetLight\PivotTableFunctions.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLAutoSortScope.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLBooleanItem.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLCacheField.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLCacheHierarchy.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLCacheSource.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLCalculatedItem.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLCalculatedMember.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLChartFormat.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLConditionalFormat.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLConsolidation.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLDataField.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLDateTimeItem.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLDimension.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLEntries.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLErrorItem.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLFieldGroup.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLFormat.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLGroup.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLGroupItems.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLGroupLevel.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLGroupMember.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLItem.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLKpi.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLLocation.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLMeasureDimensionMap.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLMeasureGroup.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLMemberProperty.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLMembers.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLMissingItem.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLNumberItem.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLPageField.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLPivotArea.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLPivotAreaReference.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLPivotCacheDefinition.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLPivotCacheRecord.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLPivotField.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLPivotFilter.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLPivotHierarchy.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLPivotTable.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLPivotTableStyle.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLQuery.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLRangeProperties.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLRangeSet.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLRowItem.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLServerFormat.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLSharedItems.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLStringItem.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLTuple.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLTupleCache.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLTupleSet.cs" />
+    <Compile Include="SpreadSheetLight\pivottable\SLTuplesType.cs" />
+    <Compile Include="SpreadSheetLight\RowColumnFunctions.cs" />
+    <Compile Include="SpreadSheetLight\SharedStringFunctions.cs" />
+    <Compile Include="SpreadSheetLight\SLDocument.cs" />
+    <Compile Include="SpreadSheetLight\SortingFunctions.cs" />
+    <Compile Include="SpreadSheetLight\sparkline\SLSparkline.cs" />
+    <Compile Include="SpreadSheetLight\sparkline\SLSparklineGroup.cs" />
+    <Compile Include="SpreadSheetLight\StyleFunctions.cs" />
+    <Compile Include="SpreadSheetLight\style\SLAlignment.cs" />
+    <Compile Include="SpreadSheetLight\style\SLBorder.cs" />
+    <Compile Include="SpreadSheetLight\style\SLCellStyle.cs" />
+    <Compile Include="SpreadSheetLight\style\SLColor.cs" />
+    <Compile Include="SpreadSheetLight\style\SLDifferentialFormat.cs" />
+    <Compile Include="SpreadSheetLight\style\SLFill.cs" />
+    <Compile Include="SpreadSheetLight\style\SLFont.cs" />
+    <Compile Include="SpreadSheetLight\style\SLNumberingFormat.cs" />
+    <Compile Include="SpreadSheetLight\style\SLProtection.cs" />
+    <Compile Include="SpreadSheetLight\style\SLStyle.cs" />
+    <Compile Include="SpreadSheetLight\style\SLTableStyle.cs" />
+    <Compile Include="SpreadSheetLight\table\SLCalculatedColumnFormula.cs" />
+    <Compile Include="SpreadSheetLight\table\SLColorFilter.cs" />
+    <Compile Include="SpreadSheetLight\table\SLCustomFilters.cs" />
+    <Compile Include="SpreadSheetLight\table\SLDateGroupItem.cs" />
+    <Compile Include="SpreadSheetLight\table\SLDynamicFilter.cs" />
+    <Compile Include="SpreadSheetLight\table\SLFilter.cs" />
+    <Compile Include="SpreadSheetLight\table\SLFilterColumn.cs" />
+    <Compile Include="SpreadSheetLight\table\SLFilters.cs" />
+    <Compile Include="SpreadSheetLight\table\SLIconFilter.cs" />
+    <Compile Include="SpreadSheetLight\table\SLTable.cs" />
+    <Compile Include="SpreadSheetLight\table\SLTableColumn.cs" />
+    <Compile Include="SpreadSheetLight\table\SLTableStyleInfo.cs" />
+    <Compile Include="SpreadSheetLight\table\SLTop10.cs" />
+    <Compile Include="SpreadSheetLight\table\SLTotalsRowFormula.cs" />
+    <Compile Include="SpreadSheetLight\table\SLXmlColumnProperties.cs" />
+    <Compile Include="SpreadSheetLight\ThemeFunctions.cs" />
+    <Compile Include="SpreadSheetLight\workbook\SLCalculationCell.cs" />
+    <Compile Include="SpreadSheetLight\workbook\SLDefinedName.cs" />
+    <Compile Include="SpreadSheetLight\workbook\SLSheet.cs" />
+    <Compile Include="SpreadSheetLight\workbook\SLWorkbook.cs" />
+    <Compile Include="SpreadSheetLight\workbook\SLWorkbookProperties.cs" />
+    <Compile Include="SpreadSheetLight\workbook\SLWorkbookView.cs" />
+    <Compile Include="SpreadSheetLight\WorksheetFunctions.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\PageSetupEnums.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLBreak.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLCell.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLCellFormula.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLCellPoint.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLCellPointRange.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLCellWarehouse.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLColumnProperties.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLComment.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLDataValidation.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLHyperlink.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLMergeCell.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLPageSettings.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLPane.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLRowColumnStyleHistory.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLRowProperties.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLSelection.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLSharedCellFormula.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLSheetFormatProperties.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLSheetProperties.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLSheetProtection.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLSheetView.cs" />
+    <Compile Include="SpreadSheetLight\worksheet\SLWorksheet.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Data\reportTemplate1.xlsx">
+      <Link>reportTemplate1.xlsx</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SpreadSheetLight\license.txt" />
+    <Content Include="SpreadSheetLight\SpreadsheetLight.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml">
+      <Version>2.11.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
